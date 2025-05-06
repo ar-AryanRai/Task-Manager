@@ -1,0 +1,56 @@
+body {
+  background: linear-gradient(to right, rgb(224, 234, 252), rgb(207, 222, 243));
+}
+
+.current {
+  background-color: skyblue;
+  color: black;
+  font-weight: 500;
+}
+
+.rest {
+  background-color: #eee;
+  font-weight: normal;
+}
+
+.filters {
+  flex-direction: column;
+  width: 100%;
+}
+
+@media (min-width: 750px) {
+  .filters {
+    flex-direction: row;
+  }
+
+  .filters button {
+    width: 33%;
+    justify-content: space-between;
+  }
+}
+
+
+@media (min-width: 950px){
+  .container{
+    width: 50%;
+  }
+
+  .add-task-container{
+    flex-direction: row;
+  }
+
+  .add-task-container input{
+    width: 80%;
+  }
+
+  .add-task-container button{
+    width: 20%;
+  }
+}
+
+@media (min-width: 1281px){
+  .container{
+    width: 36%;
+  }
+
+}

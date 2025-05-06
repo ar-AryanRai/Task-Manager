@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="max-w-[100vw] min-h-[100vh] relative flex items-center justify-center">
+
+  <div
+    class="alert-same-task top-10 py-3 px-6 rounded-lg text-lg bg-red-400 absolute text-white font-semibold opacity-0  duration-500 transition-all">
+    Task already exists in pending list.
+  </div>
+
+  <div
+    class="alert-task-name top-10 py-3 px-6 rounded-lg text-lg bg-red-400 absolute text-white font-semibold opacity-0  duration-500 transition-all">
+    Please enter task name.
+  </div>
+
+  <div class="container w-[90%] rounded-lg py-4 px-5 bg-white">
+
+    <div class="heading">
+      <h1 class="text-center text-4xl font-bold my-8">Task Manager</h1>
+    </div>
+
+    <div class="add-task-container flex flex-col gap-3">
+      <input type="text" name="task" id="task" placeholder="Add a new task"
+        class="border-gray-300 rounded-lg px-4 py-2 border-2 boder-gray-300 focus:border-[#5B9BD5] focus:outline-none">
+
+      <button class="add-task-btn text-center bg-[#5B9BD5] text-white rounded-md py-2 cursor-pointer font-semibold">
+        Add
+      </button>
+    </div>
+
+    <div class="filters flex gap-4 mt-6">
+
+      <button class="all-task-btn text-center rest rounded-md py-2 cursor-pointer">
+        All
+      </button>
+
+      <button class="completed-task-btn text-center rest rounded-md py-2 cursor-pointer">
+        Completed
+      </button>
+
+      <button class="pending-task-btn text-center current rounded-md py-2 cursor-pointer">
+        Pending
+      </button>
+
+    </div>
+
+    <div class="task-list-container mt-6">
+      <ul class="flex flex-col gap-2 list-none"></ul>
+    </div>
+
+  </div>
+
+  <script src="./script.js"></script>
+
+</body>
+
+</html>
