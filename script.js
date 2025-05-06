@@ -81,7 +81,11 @@ const displayAllTask = () => {
 const handleAddButton = () => {
   const inputValue = document.querySelector("#task").value;
   document.querySelector("#task").value = "";
-  if (data && data.pending.includes(inputValue)) {
+  if (
+    data &&
+    data.pending.includes(inputValue) &&
+    data.completed.includes(inputValue)
+  ) {
     document.querySelector(".alert-same-task").classList.remove("opacity-0");
     setTimeout(() => {
       document.querySelector(".alert-same-task").classList.add("opacity-0");
