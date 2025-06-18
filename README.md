@@ -2,7 +2,7 @@
 
 **Task Manager** is a simple and clean web-based productivity tool built using **HTML**, **Tailwind CSS**, **CSS3**, and **Vanilla JavaScript**. This application helps users add, track, and manage their daily tasks effectively with a user-friendly interface.
 
-📂 **GitHub Repository**: [github.com/ar-AryanRai/Task-Manager](https://github.com/ar-AryanRai/Task-Manager)
+📂 **GitHub Repository**: [Click here to visit Task Manager](https://github.com/ar-AryanRai/Task-Manager)
 
 ---
 
